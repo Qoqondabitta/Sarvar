@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.burger {
+  display: none;
+}
+
+.active-nav-item {
+  color: royalblue;
+}
+
+@media only screen and (max-width: 600px) {
+  .burger {
+    display: flex;
+  }
+}
