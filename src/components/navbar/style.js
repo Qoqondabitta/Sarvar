@@ -57,6 +57,7 @@ export const NavItems = styled.a`
   color: rgb(88, 86, 86);
   line-height: 19px;
   font-weight: 400;
+  cursor: pointer;
 
   @media only screen and (max-width: 600px) {
     font-size: 16px;
@@ -68,6 +69,7 @@ export const Name = styled.h2`
   font-size: 30px;
   line-height: 31px;
   font-weight: 600;
+  cursor: pointer;
   color: rgb(88, 86, 86);
   text-transform: capitalize;
 
