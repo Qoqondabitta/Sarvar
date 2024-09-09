@@ -21,7 +21,7 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 50px;
     height: fit-content;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 `;
 

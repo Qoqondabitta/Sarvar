@@ -123,8 +123,8 @@ export const AboutImage = styled.img`
     height: 300px;
   }
   @media only screen and (max-width: 600px) {
-    width: 100%;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 `;
 
