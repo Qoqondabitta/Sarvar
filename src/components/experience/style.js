@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Main = styled.div`
   margin: 0 auto;
+  margin-top: 100px;
 
   @media only screen and (max-width: 1100px) {
     height: 1000px;

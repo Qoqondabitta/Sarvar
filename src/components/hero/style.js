@@ -11,9 +11,13 @@ export const Container = styled.div`
   height: 90vh;
   text-align: center;
 
+  @media only screen and (max-width: 1100px){
+    height: 500px;
+  }
   @media only screen and (max-width: 900px) {
     justify-content: space-around;
     gap: 0px;
+    height: 400px;
     margin-top: 50px;
     padding-left: 20px;
   }

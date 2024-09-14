@@ -4,6 +4,7 @@ import Hero from "../components/hero/Hero";
 import { Main } from "./style";
 import About from "../components/about/About";
 import Experience from "../components/experience/Experience";
+import Certificate from "../components/certificates/Certificate";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <About />
       <Experience />
+      <Certificate />
     </>
   );
 };
