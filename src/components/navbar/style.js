@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const Main = styled.div`
   margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: black;
 `;
 
 export const Container = styled.div`
@@ -30,6 +36,7 @@ export const Burger = styled.div`
   padding: 20px;
   background-color: white;
   position: absolute;
+  color: black;
   inset: 0;
   width: 100%;
   height: 100vh;
@@ -54,7 +61,7 @@ export const BurgerList = styled.div`
 export const NavItems = styled.a`
   font-size: 18px;
   text-decoration: none;
-  color: rgb(88, 86, 86);
+  color: white;
   line-height: 19px;
   font-weight: 400;
   cursor: pointer;
@@ -62,6 +69,9 @@ export const NavItems = styled.a`
   @media only screen and (max-width: 600px) {
     font-size: 16px;
     line-height: 17px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 `;
 
@@ -70,7 +80,7 @@ export const Name = styled.h2`
   line-height: 31px;
   font-weight: 600;
   cursor: pointer;
-  color: rgb(88, 86, 86);
+  color: white;
   text-transform: capitalize;
 
   @media only screen and (max-width: 800px) {

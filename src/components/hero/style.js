@@ -10,6 +10,7 @@ export const Container = styled.div`
   gap: 100px;
   height: 90vh;
   text-align: center;
+  margin-top: 50px;
 
   @media only screen and (max-width: 1100px){
     height: 500px;
@@ -18,14 +19,13 @@ export const Container = styled.div`
     justify-content: space-around;
     gap: 0px;
     height: 400px;
-    margin-top: 50px;
     padding-left: 20px;
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     gap: 50px;
     height: fit-content;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 `;
 

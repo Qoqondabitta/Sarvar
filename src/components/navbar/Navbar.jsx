@@ -50,7 +50,8 @@ const Navbar = () => {
           </Burger>
         ) : (
           <RxHamburgerMenu
-            color="black"
+              color="white"
+              size="1.4rem"
             className="burger"
             onClick={chageShow}
           />
