@@ -5,6 +5,7 @@ import { Main } from "./style";
 import About from "../components/about/About";
 import Experience from "../components/experience/Experience";
 import Certificate from "../components/certificates/Certificate";
+import Education from "../components/education/Education";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <About />
       <Experience />
       <Certificate />
+      <Education />
     </>
   );
 };
