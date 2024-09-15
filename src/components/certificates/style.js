@@ -5,11 +5,11 @@ export const Main = styled.div`
   gap: 70px;
   margin-block: 100px;
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     gap: 30px;
     margin-block: 50px;
   }
-  @media only screen and (max-width: 350px){
+  @media only screen and (max-width: 350px) {
     margin-top: 150px;
   }
 `;
@@ -28,8 +28,7 @@ export const Container = styled.div`
   }
 `;
 
-export const CertificateContent = styled.div`
-`;
+export const CertificateContent = styled.div``;
 
 export const CertificateWrappers = styled.div`
   width: 250px;
@@ -43,7 +42,7 @@ export const CertificateWrappers = styled.div`
   background-size: cover;
   overflow: hidden;
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     width: 90%;
     height: 400px;
   }
@@ -65,7 +64,30 @@ export const CertificateButton = styled.button`
   transition: all 0.2s linear;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     transform: scale(0.9);
+  }
+`;
+
+export const Topup = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 20000;
+`;
+
+export const TopupImage = styled.img`
+  width: 300px;
+  height: 400px;
+  z-index: 200000;
+  object-fit: cover;
+  object-position: center;
+
+  @media only screen and (max-width: 600px){
+    width: 100%;
+    height: 300px;
   }
 `;
