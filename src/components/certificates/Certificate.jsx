@@ -15,14 +15,13 @@ import { certificate } from "../../constants/certificate";
 
 const Certificate = () => {
   const [show, setShow] = useState(false);
-  const [digit, setDigit] = useState(null);
-  const [objimg, setObjimg] = useState({})
+  const [digit, setDigit] = useState(0);
+  const [objimg, setObjimg] = useState({});
   const changeShow = (dig) => {
     setShow(!show);
   };
   const changeDigit = (dig) => {
     setDigit(dig);
-    
   };
   return (
     <Main className="column-center">
@@ -35,11 +34,33 @@ const Certificate = () => {
           <CertificateWrappers className="cert" bg={v.imge}>
             <CertificateContent className="col-start-end topup" key={i}>
               {show && (
-                <Topup className="center" onClick={changeShow}>
-                  <TopupImage
-                    onClick={() => changeShow(true)}
-                    src={v.id == i + 1 && v.ti}
-                  />
+                <Topup className="center" onClick={()=>changeShow(false)}>
+                  {digit == 0 ? (
+                    <TopupImage
+                      onClick={() => {
+                        changeShow(true);
+                        changeDigit(0);
+                      }}
+                      src={certificate[0].ti}
+                    />
+                  ) : digit == 1 ? (
+                    <TopupImage
+                      onClick={() => {
+                        changeShow(true);
+                        changeDigit(1);
+                      }}
+                      src={certificate[1].ti}
+                    />
+                  ) : (
+                    <TopupImage
+                      onClick={() => {
+                        changeShow(true);
+                        changeDigit(2);
+                      }}
+                      src={certificate[2].ti}
+                    />
+                  )}
+                  {/* <TopupImage src={v.id == i && v.ti} /> */}
                 </Topup>
               )}
               <CertificateTitle>{v.t}</CertificateTitle>

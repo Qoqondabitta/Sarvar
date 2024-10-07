@@ -42,9 +42,15 @@ export const CertificateWrappers = styled.div`
   background-size: cover;
   overflow: hidden;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px){
+    width: 80%;
+    height: 400px;
+  }
+
+  @media only screen and (max-width: 400px) {
     width: 90%;
     height: 400px;
+    justify-content: flex-end;
   }
 `;
 
@@ -86,8 +92,11 @@ export const TopupImage = styled.img`
   object-fit: cover;
   object-position: center;
 
-  @media only screen and (max-width: 600px){
-    width: 100%;
-    height: 300px;
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    height: 450px;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 90%;
   }
 `;
