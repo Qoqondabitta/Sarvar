@@ -17,6 +17,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
 // =============Icons=================
+import resume from "../../assets/Resume of Turgunaliev Sarvar.pdf"
 
 const Hero = () => {
   return (
@@ -28,7 +29,13 @@ const Hero = () => {
           <HeroName>Turgunaliev Sarvar</HeroName>
           <HeroTitle>Dilligent Financier with Big Potential</HeroTitle>
           <Box className="center">
-            <HeroButtons className="center">Download CV</HeroButtons>
+            <a
+              style={{ textDecoration: "none" }}
+              href={resume}
+              download="Turgunaliev_Sarvar_CV.pdf"
+            >
+              <HeroButtons className="center">Download CV</HeroButtons>
+            </a>
             <HeroButtons className="center" black="true">
               Contact Info
             </HeroButtons>
