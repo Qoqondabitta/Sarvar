@@ -32,8 +32,9 @@ export const ListMain = styled.p`
   color: white;
 `;
 
-export const Item = styled.li`
+export const Item = styled.a`
   font-size: 16px;
+  text-decoration: none;
   font-weight: 600;
   color: white;
 `;

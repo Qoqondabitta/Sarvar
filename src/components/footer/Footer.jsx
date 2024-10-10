@@ -10,7 +10,7 @@ const Footer = () => {
           <List className="column-center" key={i}>
             <ListMain>{v.m}</ListMain>
             {v.p.map((val, i) => (
-              <Item key={i}>{val}</Item>
+              <Item key={i} href={val?.l}>{val.n}</Item>
             ))}
           </List>
         ))}
