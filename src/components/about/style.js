@@ -117,6 +117,7 @@ export const AboutImage = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 20px;
+  object-fit: cover;
 
   @media only screen and (max-width: 1100px) {
     width: 300px;

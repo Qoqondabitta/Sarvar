@@ -4,7 +4,7 @@ import { foter } from "../../constants/footer";
 
 const Footer = () => {
   return (
-    <Main className="center">
+    <Main id="footer" className="center">
       <Container className="space-bet">
         {foter.map((v, i) => (
           <List className="column-center" key={i}>

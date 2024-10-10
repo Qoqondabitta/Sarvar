@@ -30,9 +30,9 @@ const About = () => {
           <VerticalBox className="center">
             <AboutBoxes className="column-center">
               <BsSuitcaseLgFill color="black" size="1.5rem" />
-              <Subtitle>Experience</Subtitle>
-              <AboutText>1+ year</AboutText>
-              <AboutText>English and Math Instructor</AboutText>
+              <Subtitle>Internship</Subtitle>
+              <AboutText>3+ months</AboutText>
+              <AboutText>Financial Accountant</AboutText>
             </AboutBoxes>
             <AboutBoxes className="column-center">
               <PiStudentFill color="black" size="1.7rem" />
