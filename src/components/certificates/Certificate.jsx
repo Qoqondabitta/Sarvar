@@ -12,6 +12,7 @@ import {
 import "./certificate.css";
 import { AboutText, AboutTitle } from "../about/style";
 import { certificate } from "../../constants/certificate";
+import { motion } from "framer-motion";
 
 const Certificate = () => {
   const [show, setShow] = useState(false);

@@ -72,7 +72,7 @@ export const HeroText = styled.p`
   }
 `;
 export const HeroTitle = styled.h3`
-  font-size: 30px;
+  font-size: 25px;
   line-height: 31px;
   font-weight: 600;
 
@@ -96,12 +96,13 @@ export const HeroButtons = styled.button`
   border: ${({ black }) => (black ? "1px solid white" : "1px solid black")};
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.5s linear;
+  transition: all 0.25s linear;
   width: 150px;
   height: 45px;
   font-weight: 600;
 
   &:hover {
+    font-weight: 600;
     transform: scale(0.75);
   }
 
