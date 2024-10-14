@@ -30,7 +30,9 @@ const Navbar = () => {
         <Name className="center">Sarvar Turgunaliev</Name>
         <List className="center">
           {navbarItems.map((v, i) => (
-            <NavItems key={i}>{v.title}</NavItems>
+            <NavItems href={v.pathId} key={i}>
+              {v.title}
+            </NavItems>
           ))}
         </List>
         {show ? (
@@ -38,7 +40,9 @@ const Navbar = () => {
             <IoMdClose onClick={chageShow} color="black" />
             <BurgerList className="col-start">
               {navbarItems.map((v, i) => (
-                <NavItems key={i}>{v.title}</NavItems>
+                <NavItems href={v.pathId} key={i}>
+                  {v.title}
+                </NavItems>
               ))}
             </BurgerList>
             <BurgerList className="center">
@@ -50,8 +54,8 @@ const Navbar = () => {
           </Burger>
         ) : (
           <RxHamburgerMenu
-              color="white"
-              size="1.4rem"
+            color="white"
+            size="1.4rem"
             className="burger"
             onClick={chageShow}
           />

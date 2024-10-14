@@ -37,8 +37,6 @@ export const AboutRight = styled.div`
   gap: 20px;
   width: 60%;
 
-
-
   @media only screen and (max-width: 900px){
     width: 100%;
     padding-inline: 20px;
@@ -123,8 +121,9 @@ export const AboutImage = styled.img`
     height: 300px;
   }
   @media only screen and (max-width: 600px) {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 300px;
+    /* display: none; */
   }
 `;
 

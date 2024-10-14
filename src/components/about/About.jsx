@@ -42,7 +42,7 @@ const About = () => {
     }
   }, [isInView]);
   return (
-    <Main>
+    <Main id="about">
       <Container className="column-center" gap="10px" ref={containerRef}>
         <motion.p className="about-text" style={{ translateX: titleOneValue }}>
           Get To Know More

@@ -11,8 +11,8 @@ import { AboutTitle } from "../about/style";
 
 const Experience = () => {
   return (
-      <Main className="column-center">
-          <AboutTitle>Experience</AboutTitle>
+    <Main className="column-center" id="experience">
+      <AboutTitle>Experience</AboutTitle>
       <Container className="center">
         <VerticalTimeline>
           {experience.map((v, i) => (

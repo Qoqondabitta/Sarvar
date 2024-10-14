@@ -19,7 +19,7 @@ export const Container = styled.div`
     justify-content: space-around;
     gap: 0px;
     height: 400px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;

@@ -18,7 +18,7 @@ export const education = [
   },
   {
     i: <RiSchoolFill />,
-    j: "Brbalo Educational Center",
+    j: "SAT Tashkent Educational Center",
     p: "2024 May - 2024 August",
     l: "Studied SAT fundamentals and scored 1480 from the first trial, reaching maximum score of 800 at math section.",
   },

@@ -25,7 +25,7 @@ const Certificate = () => {
     setDigit(dig);
   };
   return (
-    <Main className="column-center">
+    <Main className="column-center" id="certificate">
       <Container gap="10px" className="column-center">
         <AboutText>Browse My Certificates</AboutText>
         <AboutTitle>Certificates</AboutTitle>

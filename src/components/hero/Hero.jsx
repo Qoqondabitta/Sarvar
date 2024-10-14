@@ -40,7 +40,7 @@ const Hero = () => {
      }
   }, [isInView])
   return (
-    <Main className="center">
+    <Main className="center" id="hero">
       <Container className="center" ref={imageRef}>
         <motion.div
           animate={mainControls}

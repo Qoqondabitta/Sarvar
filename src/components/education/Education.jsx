@@ -10,7 +10,7 @@ import { education } from "../../constants/education";
 
 const Education = () => {
   return (
-    <Main className="column-center">
+    <Main className="column-center" id="education">
       <AboutTitle>Education</AboutTitle>
       <Container className="center">
         <VerticalTimeline>
