@@ -59,7 +59,6 @@ export const AboutText = styled.p`
   font-size: 16px;
   color: #333;
   font-weight: 600;
-
 `;
 
 export const AboutBoxes = styled.div`

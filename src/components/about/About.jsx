@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   AboutBoxes,
   AboutImage,
@@ -14,13 +14,51 @@ import {
 import { BsSuitcaseLgFill } from "react-icons/bs";
 import aboutimage from "../../assets/sarvar.jpg";
 import { PiStudentFill } from "react-icons/pi";
+import {
+  motion,
+  useAnimation,
+  useInView,
+  useScroll,
+  useTransform,
+} from "framer-motion";
+import "./about.css";
 
 const About = () => {
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef, { once: true });
+  const textControls = useAnimation();
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end end"],
+  });
+
+  const titleOneValue = useTransform(scrollYProgress, [0, 1], ["-100%", "0%"]);
+  // const titleTwoValue = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
+
+  useEffect(() => {
+    if (isInView) {
+      textControls.start("visible");
+    }
+  }, [isInView]);
   return (
     <Main>
-      <Container className="column-center" gap="10px">
-        <AboutText>Get To Know More</AboutText>
-        <AboutTitle>About Me</AboutTitle>
+      <Container className="column-center" gap="10px" ref={containerRef}>
+        <motion.p className="about-text" style={{ translateX: titleOneValue }}>
+          Get To Know More
+        </motion.p>
+        <motion.h2
+          className="about-title"
+          animate={textControls}
+          initial="hidden"
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ delay: 0.3 }}
+        >
+          About Me
+        </motion.h2>
       </Container>
       <Container className="center" gap="50px">
         <ImageWrapper>
