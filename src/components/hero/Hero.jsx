@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Main,
   Container,
@@ -18,7 +18,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
 // =============Icons=================
 import resume from "../../assets/Resume of Turgunaliev Sarvar.pdf";
-import { motion } from "framer-motion";
+import { motion, useAnimate, useAnimation, useInView } from "framer-motion";
 import "./hero.css";
 
 const ContainerVariants = {
@@ -29,14 +29,30 @@ const ContainerVariants = {
 const kidVariants = {hidden:{opacity:0}, show:{opacity:1}}
 
 const Hero = () => {
+  const imageRef = useRef(null)
+
+  const isInView = useInView(imageRef, { once: true })
+  const mainControls = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible")
+     }
+  }, [isInView])
   return (
     <Main className="center">
-      <Container className="center">
+      <Container className="center" ref={imageRef}>
         <motion.div
-          // variants={ContainerVariants}
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{duration: 0.8, ease: "easeOut", delay: 0.2}}
+          animate={mainControls}
+          initial="hidden"
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: {
+              opacity: 1,
+              y: 0
+            }
+          }}
+          transition={{ delay: 0.3 }}
           className="center"
         >
           <HeroImage src={sarvar} />
