@@ -21,6 +21,9 @@ export const Main = styled.div`
     height: 1000px;
     margin-top: 50px;
   }
+  @media only screen and (max-width: 400px) {
+    height: 1100px;
+  }
 `;
 
 export const Container = styled.div`
@@ -37,7 +40,7 @@ export const AboutRight = styled.div`
   gap: 20px;
   width: 60%;
 
-  @media only screen and (max-width: 900px){
+  @media only screen and (max-width: 900px) {
     width: 100%;
     padding-inline: 20px;
   }
@@ -45,7 +48,6 @@ export const AboutRight = styled.div`
 
 export const VerticalBox = styled.div`
   gap: 20px;
-
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -65,7 +67,7 @@ export const AboutBoxes = styled.div`
   height: 200px;
   border: 1px solid black;
   gap: 10px;
-  
+
   @media only screen and (max-width: 1100px) {
     width: 300px;
   }
@@ -74,7 +76,6 @@ export const AboutBoxes = styled.div`
   }
   @media only screen and (max-width: 600px) {
     width: 100%;
-    /* padding-inline: 10px; */
     text-align: center;
   }
 `;
@@ -123,7 +124,6 @@ export const AboutImage = styled.img`
   @media only screen and (max-width: 600px) {
     width: 100%;
     height: 300px;
-    /* display: none; */
   }
 `;
 

@@ -7,9 +7,9 @@ export const Main = styled.div`
 
   @media only screen and (max-width: 600px) {
     gap: 30px;
-    margin-block: 50px;
+    margin-top: 50px;
   }
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 400px) {
     margin-top: 150px;
   }
 `;

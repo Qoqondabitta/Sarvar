@@ -16,7 +16,11 @@ export const Main = styled.div`
   }
   @media only screen and (max-width: 600px) {
     height: 1350px;
-    margin-top: 100px;
+    margin-top: 150px;
+  }
+  @media only screen and (max-width: 400px) {
+    margin-top: 150px;
+    gap: 80px;
   }
 `;
 
